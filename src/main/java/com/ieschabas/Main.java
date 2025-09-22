@@ -33,5 +33,12 @@ public class Main {
         System.out.println("El area de base: "+rectangulo1.getBase()+" y altura: "+rectangulo1.getAltura()+" es: "+rectangulo1.calcularArea() );
 
 
+        CuentaBancaria cuentaAdrian = new CuentaBancaria();
+        cuentaAdrian.setSaldo(1000.0);
+        System.out.println(cuentaAdrian.getSaldo());
+        cuentaAdrian.ingresarDinero(1000.0);
+        System.out.println(cuentaAdrian.getSaldo());
+        cuentaAdrian.retirarDinero(500.0);
+        System.out.println(cuentaAdrian.getSaldo());
     }
 }
