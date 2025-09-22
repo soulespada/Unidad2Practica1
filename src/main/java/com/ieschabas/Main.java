@@ -23,6 +23,15 @@ public class Main {
         System.out.println("Nueva edad: "+persona1.getEdad());
         //Imprimimos todos los atributos
         System.out.println(persona1.toString());
+        //Uso de la clase Rectangulo
+        Rectangulo rectangulo1 = new Rectangulo(3.4,5.6);
+        Rectangulo rectangulo2= new Rectangulo();
+        //Setear la base y altura del rectangulo 1
+        rectangulo2.setBase(5.2);
+        rectangulo2.setAltura(6.2);
+        System.out.println("Area del rectangulo 2: "+rectangulo2.calcularArea());
+        System.out.println("El area de base: "+rectangulo1.getBase()+" y altura: "+rectangulo1.getAltura()+" es: "+rectangulo1.calcularArea() );
+
 
     }
 }
