@@ -1,5 +1,10 @@
 package com.ieschabas;
 
+/**
+ * Clase que define un circulo
+ * @author Adrian
+ * @version 1.0
+ */
 public class Circulo {//9. Crea una clase Circulo con atributo radio y un método calcularArea().
     private double radio;
 

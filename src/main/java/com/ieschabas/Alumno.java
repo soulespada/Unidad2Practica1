@@ -1,5 +1,10 @@
 package com.ieschabas;
 
+/**
+ * Clase que define un Alumno
+ * @author Adrian
+ * @version 1.0
+ */
 public class Alumno {//7. Diseña una clase Alumno con atributos nombre y nota. Implementa un método aprobado() que devuelva true si la nota es >= 5.
     private String nombre;
     private double nota;

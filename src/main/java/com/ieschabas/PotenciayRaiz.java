@@ -1,5 +1,10 @@
 package com.ieschabas;
 
+/**
+ * Clase que define los metodos para sacar la potencia o raiz de un numero
+ * @author Adrian
+ * @version 1.0
+ */
 public class PotenciayRaiz {
     private double numero;
 

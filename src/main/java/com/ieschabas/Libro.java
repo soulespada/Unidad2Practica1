@@ -1,5 +1,10 @@
 package com.ieschabas;
 
+/**
+ * Clase que define un Libro
+ * @author Adrian
+ * @version 1.0
+ */
 public class Libro {//6. Implementa una clase Libro con título, autor y páginas. Incluye un constructor y un método mostrarInformacion().
     private String titulo;
     private String autor;

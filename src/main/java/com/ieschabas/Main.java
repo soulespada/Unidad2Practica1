@@ -91,6 +91,36 @@ public class Main {
         //este metodo por parametro pide un objeto de tipo PotenciayRaiz
         System.out.println(circulo1.calcularArea(radioPotencia));
 
+        //Calculadora
+
+        Scanner scan3 = new Scanner(System.in);
+        System.out.println("Introduce el primer numero: ");
+        double numeroCalculadora1 = scan3.nextDouble();
+        System.out.println("Introduce el segundo numero: ");
+        double numeroCalculadora2 = scan3.nextDouble();
+        //instanciamos el objeto calculadora1 y lo cargamos de los numeros introducidos por el usuario
+        Calculadora calculadora1 = new Calculadora(numeroCalculadora1,numeroCalculadora2);
+        System.out.println("Elige la operacion: \nPara sumar pulsa 1\nPara restar pulsa 2\nPara multiplicar pulsa 3\nPara dividir pulsa 4");
+
+        int opcion = scan.nextInt();
+        //hacemos un switch con las distintas opciones
+        //en cada caso usamos el metodo correspondiente dentro de un system out para sacar el resultado por pantalla
+        switch(opcion){
+            case 1:
+                System.out.println("El resultado de la suma es: "+calculadora1.sumar());
+            break;
+            case 2:
+                System.out.println("El resultado de la resta es: "+calculadora1.restar());
+            break;
+            case 3:
+                System.out.println("El resultado de la multiplicacion es: "+calculadora1.multiplicar());
+            break;
+            case 4:
+                System.out.println("El resultado de la division es: "+calculadora1.dividir());
+            break;
+
+        }
+
 
 
     }
