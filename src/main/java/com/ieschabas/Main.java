@@ -40,5 +40,11 @@ public class Main {
         System.out.println(cuentaAdrian.getSaldo());
         cuentaAdrian.retirarDinero(500.0);
         System.out.println(cuentaAdrian.getSaldo());
+
+        Coche mercedes = new Coche(50.0);
+        mercedes.acelerar(20.0);
+        System.out.println(mercedes.getVelocidad() +" km/h");
+        mercedes.frenar(40.0);
+        System.out.println(mercedes.getVelocidad()+" km/h");
     }
 }
