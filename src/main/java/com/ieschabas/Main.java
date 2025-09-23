@@ -1,4 +1,6 @@
 package com.ieschabas;
+import java.math.*;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -32,7 +34,7 @@ public class Main {
         System.out.println("Area del rectangulo 2: "+rectangulo2.calcularArea());
         System.out.println("El area de base: "+rectangulo1.getBase()+" y altura: "+rectangulo1.getAltura()+" es: "+rectangulo1.calcularArea() );
 
-
+        //Cuenta Bancaria
         CuentaBancaria cuentaAdrian = new CuentaBancaria();
         cuentaAdrian.setSaldo(1000.0);
         System.out.println(cuentaAdrian.getSaldo());
@@ -41,10 +43,26 @@ public class Main {
         cuentaAdrian.retirarDinero(500.0);
         System.out.println(cuentaAdrian.getSaldo());
 
+
+        //Coche
         Coche mercedes = new Coche(50.0);
         mercedes.acelerar(20.0);
         System.out.println(mercedes.getVelocidad() +" km/h");
         mercedes.frenar(40.0);
         System.out.println(mercedes.getVelocidad()+" km/h");
+
+        //5. Usa la clase Math para calcular la raíz cuadrada y potencia de un número introducido por el usuario.
+        //instanciamos el scanner
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Introduce un numero y le calcularemos la raiz cuadrada y la potencia");
+        //escaneamos el numero
+        double numero = scan.nextDouble();
+        //utilizamos la clase Math para utilizar los metodos que calculan la raiz cuadrada y la potencia del numero y lo sacamos por pantalla
+        System.out.println(Math.sqrt(numero));
+        System.out.println(Math.pow(numero,2.0));
+
+
+
+
     }
 }
