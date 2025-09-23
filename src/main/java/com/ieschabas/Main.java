@@ -72,6 +72,11 @@ public class Main {
         //usamos el metodo mostrarInformacion() en un sout para ver todos los datos de libro
         System.out.println("Aqui tienes toda la informacion del libro1: \n"+ libro1.mostrarInformacion());
 
+        //Alumno
+        //Instanciamos el objeto alumno1 de la clase Alumno y rellenamos los parametros
+        Alumno alumno1 = new Alumno("Adrian",3.5);
+        //Probamos el metodo aprobado, si devuelve true es porque el metodo ha comprobado que la nota es igual o mayor a 5, si devuelve false es porque es menor
+        System.out.println(alumno1.aprobado());
 
 
 
