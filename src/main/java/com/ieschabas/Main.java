@@ -51,15 +51,28 @@ public class Main {
         mercedes.frenar(40.0);
         System.out.println(mercedes.getVelocidad()+" km/h");
 
-        //5. Usa la clase Math para calcular la raíz cuadrada y potencia de un número introducido por el usuario.
-        //instanciamos el scanner
+        //Math
+        //Instanciamos el scanner
         Scanner scan = new Scanner(System.in);
         System.out.println("Introduce un numero y le calcularemos la raiz cuadrada y la potencia");
         //escaneamos el numero
         double numero = scan.nextDouble();
-        //utilizamos la clase Math para utilizar los metodos que calculan la raiz cuadrada y la potencia del numero y lo sacamos por pantalla
-        System.out.println(Math.sqrt(numero));
-        System.out.println(Math.pow(numero,2.0));
+
+        //instanciamos el objeto
+        PotenciayRaiz numero1 = new PotenciayRaiz(numero);
+        double resultadoRaizCuadrada = numero1.calcularRaizCuadrada();
+        System.out.println("La raiz cuadrada del numero: "+numero1.getNumero()+" es: "+ resultadoRaizCuadrada);
+        //Calculo de la potencia
+        double resultadoPotencia = numero1.calcularPotencia(2);
+        System.out.println("El numero "+numero1.getNumero()+" al cuadrado es: "+ resultadoPotencia);
+
+        //Libro
+        //Instanciamos el objeto libro1 de la clase Libro y rellenamos los parametros
+        Libro libro1 = new Libro("Cancion de hielo y fuego","George R Martin",800);
+        //usamos el metodo mostrarInformacion() en un sout para ver todos los datos de libro
+        System.out.println("Aqui tienes toda la informacion del libro1: \n"+ libro1.mostrarInformacion());
+
+
 
 
 
