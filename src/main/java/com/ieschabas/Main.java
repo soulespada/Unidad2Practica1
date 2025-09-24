@@ -81,16 +81,15 @@ public class Main {
         //Circulo
         //Instanciamos el objeto circulo1 de la clase Circulo y el Scanner
         Scanner scan2 = new Scanner(System.in);
-        Circulo circulo1 = new Circulo();
+
         System.out.println("Introduce el radio del circulo: ");
         //Escaneamos la variable
         double radioUsuario = scan2.nextDouble();
-        //Creamos un objeto de tipo PotenciayRaiz para poder utilizar el metodo de potencia para calcular el area del circulo, por lo tanto introducimos la variable escaneada en el objeto
-        PotenciayRaiz radioPotencia= new PotenciayRaiz(radioUsuario);
+        Circulo circulo1 = new Circulo(radioUsuario);
         //Sacamos por pantalla el calculo del Area del circulo con determinado radio usando el metodo calcularArea
         //este metodo por parametro pide un objeto de tipo PotenciayRaiz
-        System.out.println(circulo1.calcularArea(radioPotencia));
-
+        System.out.println(circulo1.calcularArea());
+        System.out.println("radio circulo "+circulo1.getRadio());
         //Calculadora
 
         Scanner scan3 = new Scanner(System.in);

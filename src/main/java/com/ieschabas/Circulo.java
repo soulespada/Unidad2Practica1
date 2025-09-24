@@ -17,13 +17,13 @@ public class Circulo {//9. Crea una clase Circulo con atributo radio y un métod
      * Constructor sobrecargado
      * @param radio
      */
-    public Circulo(double radio){radio = this.radio;}
+    public Circulo(double radio){this.radio=radio;}
 
     /**
      * Metodo que establece el radio del Circulo
      * @param radio
      */
-    public void setRadio(double radio){radio=this.radio;}
+    public void setRadio(double radio){this.radio=radio;}
 
     /**
      * Metodo que devuelve el radio del Circulo
@@ -31,11 +31,14 @@ public class Circulo {//9. Crea una clase Circulo con atributo radio y un métod
      */
     public double getRadio(){return this.radio;}
 
+
+   // public double calcularArea(PotenciayRaiz potenciayRaiz){return potenciayRaiz.calcularPotencia(2)*Math.PI;}
+
     /**
-     * Metodo (que recibe un objeto de tipo PotenciayRaiz para utilizar su metodo de calcular potencias)que devuelve el area del circulo
-     * @param potenciayRaiz
+     * metodo que crea un objeto de tipo PotenciayRaiz para utilizar su metodo calcularPotencia y finalmente devuelve el area del circulo de radio x
      * @return
      */
-    public double calcularArea(PotenciayRaiz potenciayRaiz){return potenciayRaiz.calcularPotencia(2)*Math.PI;}
+    public double calcularArea(){PotenciayRaiz potenciayRaiz = new PotenciayRaiz(radio);
+    return potenciayRaiz.calcularPotencia(2)*Math.PI;}
 
 }

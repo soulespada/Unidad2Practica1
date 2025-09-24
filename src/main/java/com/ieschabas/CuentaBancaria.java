@@ -1,6 +1,10 @@
 package com.ieschabas;
 //3. Diseña una clase CuentaBancaria con atributos saldo y titular.
 // Implementa métodos para ingresar y retirar dinero.
+
+/**
+ * Clase que define una cuenta bancaria
+ */
 public class CuentaBancaria {
     private double saldo;
     private String titular;
